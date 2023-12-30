@@ -1,1 +1,58 @@
-// TODO convert all skills from p6 docs into json objects here
+{
+    "Melee": [
+        {
+            "Strong Swing": {
+                "type": "passive",
+                "stat effect": "none",
+                "effect text": "Unaimed melee attacks deal 1 additional damage",
+                "progression": {
+                    "Wind Knocker": {
+                        "type": "passive",
+                        "stat effect": ["none"],
+                        "effect text": "If your melee attack beats the targets Armor and Dodge scores, make a Brawn check of 10 to stun them",
+                        "progression": {
+                            "Wild Strike": {
+                                "type": "action",
+                                "stat effect": "none",
+                                "effect text": "Once per combat, make a melee attack. You can use your unused action(s) to boost the damage by 3 per unused action",
+                                "progression": {
+                                    "Surge of Strength": {
+                                        "type": "action",
+                                        "stat effect": "none",
+                                        "effect text": "Once per combat, add 1d6 of damage to a melee attack"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                } 
+            },
+            "Double Slash": {
+                "type": "action",
+                "stat effect": "none",
+                "effect text": "Attack a target twice, but don't add positive modifiers from weapons",
+                "progression": {
+                    "Repetitive Strike": {
+                        "type": "passive",
+                        "stat effect": "none",
+                        "effect text": "+1 to a die if you already attacked this turn",
+                        "progression": {
+                            "In the Zone": {
+                                "type": "passive",
+                                "stat effect": "none",
+                                "effect text": "If you land 3 attacks in a single turn, roll an extra die on Swift checks and add 10 meters of movement until your next turn ends",
+                                "progression": {
+                                    "Incessant Flurry": {
+                                        "type": "passive",
+                                        "stat effect": "none",
+                                        "effect text": "Bonus melee attack per turn"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
