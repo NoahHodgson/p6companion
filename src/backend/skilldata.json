@@ -1,5 +1,5 @@
 {
-    "Melee": [
+    "Melee":
         {
             "Strong Swing": {
                 "type": "passive",
@@ -53,6 +53,61 @@
                     }
                 }
             }
+        },
+
+    "Ranged": {
+        "Long Shot": {
+            "type": "passive",
+            "stat effect": "none",
+            "effect text": "Add +2 to ranged attacks over 25 meters away",
+            "progression": {
+                "Quick Adjustment": {
+                    "type": "passive",
+                    "stat effect": "none",
+                    "effect text": "If you missed your first ranged attack this turn, add +2 to your next attack roll",
+                    "progression": {
+                        "Pinpoint Accuracy": {
+                            "type": "passive",
+                            "stat effect": "none",
+                            "effect text": "Add your Intellect to a die on ranged aimed shots",
+                            "progression": {
+                                "Never Miss": {
+                                    "type": "action",
+                                    "stat effect": "none",
+                                    "effect type": "Once per combat, your next ranged aimed attack hits, even if it is out of your weapon's max range or if the target is behind cover"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+
+        "Trigger Happy": {
+            "type": "action",
+            "stat effect": "none",
+            "effect text": "In the first round of combat, make two ranged weapon attacks",
+            "progression": {
+                "Run and Gun": {
+                    "type": "passive",
+                    "stat effect": "none",
+                    "effect text": "If you started this turn behind cover and will end this turn out of cover, make an additional ranged attack",
+                    "progression": {
+                        "Point Blank": {
+                            "type": "passive",
+                            "stat effect": "none",
+                            "effect text": "Ranged attacks made within 10 meters deal +1 damage",
+                            "progression": {
+                                "Termination": {
+                                    "type": "passive",
+                                    "stat effect": "none",
+                                    "effect text": "If you killed or set an enemy to 1 HP, reload all weapons and make a bonus ranged attack"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
-    ]
+    }
 }
