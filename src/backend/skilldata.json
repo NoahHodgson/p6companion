@@ -163,5 +163,87 @@
                 }
             }
         }
+    },
+    "Evasion": {
+        "Illusive": {
+            "type": "bonus action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Once per combat, double your Dodge Score until the end of your next turn",
+            "progression": {
+                "Barely Scathed": {
+                    "type": "passive",
+                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                    "effect text": "getting behind partial cover doesn't take an action",
+                    "progression": {
+                        "Disarm": {
+                            "type": "passive",
+                            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                            "effect text": "If an enemy fails to beat your Dodge Score, make a Swift check of 10 to disarm the target",
+                            "progression": {
+                                "Untouchable": {
+                                    "type": "passive",
+                                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                                    "effect text": "You have two bonus uses of Skillful Dodge per rest"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "Sprinter": {
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "+2 to Dodge Score on turns where you used an action to make a second movement",
+            "progression": {
+                "Evasive": {
+                    "type": "passive",
+                    "stat effect": [0, 0, 0, 0, 0, 2, -2],
+                    "effect text": "+2 to Dodge Score, -2 to max HP",
+                    "progression": {
+                        "Slide Kick": {
+                            "type": "action",
+                            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                            "effect text": "If you used 2 movement actions this turn, make a melee attack as a bonus action. This attack rolls 2d6 + Dodge Score, deals 2 damage, and halves the target's movement on success",
+                            "progression": {
+                                "Pure Speed": {
+                                    "type": "action",
+                                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                                    "effect text": "Once per combat, gain a bonus movement action per attack this turn"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "Ambush": {
+        "In the Shadows": {
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Roll an additional die on Swift checks related to sneaking",
+            "progression": {
+                "Surgical Strike": {
+                    "type": "passive",
+                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                    "effect text": "No penalty for the first aimed ambush of combat",
+                    "progression": {
+                        "Return to the Shadows": {
+                            "type": "action",
+                            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                            "effect text": "If you still have an action after an ambush attack, perform a Swift check of 6 behind partial cover to re-enter stealth",
+                            "progression": {
+                                "Boogeyman": {
+                                    "type": "passive",
+                                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                                    "effect text": "Unaimed ambushes deal x2 damage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
