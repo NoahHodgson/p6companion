@@ -3,22 +3,22 @@
         {
             "Strong Swing": {
                 "type": "passive",
-                "stat effect": "none",
+                "stat effect": [0, 0, 0, 0, 0, 0, 0],
                 "effect text": "Unaimed melee attacks deal 1 additional damage",
                 "progression": {
                     "Wind Knocker": {
                         "type": "passive",
-                        "stat effect": ["none"],
+                        "stat effect": [0, 0, 0, 0, 0, 0, 0],
                         "effect text": "If your melee attack beats the targets Armor and Dodge scores, make a Brawn check of 10 to stun them",
                         "progression": {
                             "Wild Strike": {
                                 "type": "action",
-                                "stat effect": "none",
+                                "stat effect": [0, 0, 0, 0, 0, 0, 0],
                                 "effect text": "Once per combat, make a melee attack. You can use your unused action(s) to boost the damage by 3 per unused action",
                                 "progression": {
                                     "Surge of Strength": {
                                         "type": "action",
-                                        "stat effect": "none",
+                                        "stat effect": [0, 0, 0, 0, 0, 0, 0],
                                         "effect text": "Once per combat, add 1d6 of damage to a melee attack"
                                     }
                                 }
@@ -29,22 +29,22 @@
             },
             "Double Slash": {
                 "type": "action",
-                "stat effect": "none",
+                "stat effect": [0, 0, 0, 0, 0, 0, 0],
                 "effect text": "Attack a target twice, but don't add positive modifiers from weapons",
                 "progression": {
                     "Repetitive Strike": {
                         "type": "passive",
-                        "stat effect": "none",
+                        "stat effect": [0, 0, 0, 0, 0, 0, 0],
                         "effect text": "+1 to a die if you already attacked this turn",
                         "progression": {
                             "In the Zone": {
                                 "type": "passive",
-                                "stat effect": "none",
+                                "stat effect": [0, 0, 0, 0, 0, 0, 0],
                                 "effect text": "If you land 3 attacks in a single turn, roll an extra die on Swift checks and add 10 meters of movement until your next turn ends",
                                 "progression": {
                                     "Incessant Flurry": {
                                         "type": "passive",
-                                        "stat effect": "none",
+                                        "stat effect": [0, 0, 0, 0, 0, 0, 0],
                                         "effect text": "Bonus melee attack per turn"
                                     }
                                 }
@@ -58,17 +58,17 @@
     "Ranged": {
         "Long Shot": {
             "type": "passive",
-            "stat effect": "none",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
             "effect text": "Add +2 to ranged attacks over 25 meters away",
             "progression": {
                 "Quick Adjustment": {
                     "type": "passive",
-                    "stat effect": "none",
+                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
                     "effect text": "If you missed your first ranged attack this turn, add +2 to your next attack roll",
                     "progression": {
                         "Pinpoint Accuracy": {
                             "type": "passive",
-                            "stat effect": "none",
+                            "stat effect": [0, 0, 0, 0, 0, 0, 0],
                             "effect text": "Add your Intellect to a die on ranged aimed shots",
                             "progression": {
                                 "Never Miss": {
@@ -85,23 +85,77 @@
 
         "Trigger Happy": {
             "type": "action",
-            "stat effect": "none",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
             "effect text": "In the first round of combat, make two ranged weapon attacks",
             "progression": {
                 "Run and Gun": {
                     "type": "passive",
-                    "stat effect": "none",
+                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
                     "effect text": "If you started this turn behind cover and will end this turn out of cover, make an additional ranged attack",
                     "progression": {
                         "Point Blank": {
                             "type": "passive",
-                            "stat effect": "none",
+                            "stat effect": [0, 0, 0, 0, 0, 0, 0],
                             "effect text": "Ranged attacks made within 10 meters deal +1 damage",
                             "progression": {
                                 "Termination": {
                                     "type": "passive",
                                     "stat effect": "none",
                                     "effect text": "If you killed or set an enemy to 1 HP, reload all weapons and make a bonus ranged attack"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "Protection": {
+        "Armor Up": {
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "+1 to Armor Score when wearing armor",
+            "progression": {
+                "Unscathed": {
+                    "type": "passive",
+                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                    "effect text": "Ignore the first status effect in combat",
+                    "progression": {
+                        "Impervious": {
+                            "type": "action",
+                            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                            "effect text": "Once per rest make a brawn check of 6. On success, you can't take more than 1 damage per attack until the end of your next turn",
+                            "progression": {
+                                "Near Invincible": {
+                                    "type": "passive",
+                                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                                    "effect text": "Double the amount of HP gained from Overshield"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "Bulking Up": {
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Lose 5 meters of movement. Gain +2 HP whenever you permanently gain Brawn",
+            "progression": {
+                "Taunt": {
+                    "type": "action",
+                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                    "effect text": "force an enemy within movement range to move towards you and use ALL their actions to melee attack you on their next turn. At full health, this is a bonus action",
+                    "progression": {
+                        "Behind Me": {
+                            "type": "bonus action",
+                            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                            "effect text": "Interrupt a ranged attack and move up to 15 meters to intercept it",
+                            "progression": {
+                                "Aid the Tank": {
+                                    "type": "passive",
+                                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                                    "effect text": "If you were hit since your last turn, gain +2 additional HP when healed and roll an additional attack die"
                                 }
                             }
                         }
