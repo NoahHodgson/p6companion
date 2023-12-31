@@ -245,5 +245,33 @@
                 }
             }
         }
+    },
+    "Grappling": {
+        "Off the Top Ropes": {
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Any fall damage taken during grapples is applied to your opponent instead. +1 to grappling checks",
+            "progression": {
+                "No Escape": {
+                    "type": "passive",
+                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                    "effect text": "Gain a bonus movement action the turn after a target escapes your grapple",
+                    "progression": {
+                        "Spinning Throw": {
+                            "type": "action",
+                            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                            "effect text": "Throw a target up to 20 meters. If they hit a solid object, they take damage equal to your Brawn score. Anyone else they collide with also takes damage equal to your Brawn score",
+                            "progression": {
+                                "World Champion": {
+                                    "type": "passive",
+                                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                                    "effect text": "Your movement is not restricted when grappling and you can grapple two enemies at once"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
