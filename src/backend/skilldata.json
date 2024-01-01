@@ -273,5 +273,59 @@
                 }
             }
         }
+    },
+    "Performance": {
+        "Crowd Favorite": {
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "After succeeding a Charisma check in a crowd, +1 to your Charisma until you fail a Charisma check",
+            "progression": {
+                "Feeling Yourself": {
+                    "type": "passive",
+                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                    "effect text": "Gain +2 to your next attack roll after a successful Charisma check",
+                    "progression": {
+                        "Dreamboat": {
+                            "type": "passive",
+                            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                            "effect text": "Characters who could be attracted to you must pass a Charisma check of 8 to be able to attack the first round of combat",
+                            "progression": {
+                                "Beloved": {
+                                    "type": "passive",
+                                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                                    "effect text": "If you have ever passed a Charisma check against an NPC, they will come to your aid if you are attacked as long as you have not attacked them"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "Conversationalist": {
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "When talking to someone in a faction you have stored Faction Points with, +2 to Charisma checks",
+            "progression": {
+                "Smooth Recovery": {
+                    "type": "passive",
+                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                    "effect text": "After failing a Charisma check, you get a bonus die for your next one",
+                    "progression": {
+                        "Curry Favor": {
+                            "type": "action",
+                            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                            "effect text": "Spend a faction point to pass all Charisma checks with that faction for the rest of the day",
+                            "progression": {
+                                "Favorite Son": {
+                                    "type": "action",
+                                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                                    "effect text": "Unlock everything from a faction once"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
