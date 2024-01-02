@@ -327,5 +327,145 @@
                 }
             }
         }
+    },
+    "Intimidation": {
+        "Confidence Killer": {
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Charisma check of 6 to give an enemy -2 to a stat of your choice until the end of your next turn. (Can't effect HP)",
+            "progression": {
+                "Imposing": {
+                    "type": "passive",
+                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                    "effect text": "You can't be attacked until you make a hostile action",
+                    "progression": {
+                        "Hand it Over": {
+                            "type": "action",
+                            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                            "effect text": "Charisma check of 6 to rob the target of any non-precious item with no risk of immediate conflict.",
+                            "progression": {
+                                "It's so Over": {
+                                    "type": "action",
+                                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                                    "effect text": "Once per rest, make a Charisma check of 12 to end combat"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "Support": {
+        "Encourage": {
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Once per rest, Charisma check of 10. On success, give an ally 2 bonus dice on their next stat check or attack. On fail, they get 1 bonus die",
+            "progression": {
+                "Ubreakable": {
+                    "type": "action",
+                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                    "effect text": "Once per rest, Charisma check of 6. On success, they can't go below 1 HP until the end of your next turn.",
+                    "progression": {
+                        "Coaching": {
+                            "type": "action",
+                            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                            "effect text": "Once per rest, give yoru allies a bonus action on their next turn",
+                            "progression": {
+                                "Without Fail": {
+                                    "type": "action",
+                                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                                    "effect text": "Once per rest, until the end of your next turn, allies automatically pass their checks and their attacks always hit."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "Observation": {
+        "Foreknew": {
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Know one enemy's next turn. If your Intellect is 4 or higher, you may use this once per turn as a bonus action",
+            "progression": {
+                "Tactical Sight": {
+                    "type": "passive",
+                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                    "effect text": "You know the HP of all enemies that are within eyesight and have taken damage in this combat. Also, you can't be ambushed.",
+                    "progression": {
+                        "Mind Reader": {
+                            "type": "action",
+                            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                            "effect text": "Intellect check of 8. On success, read the target's mind",
+                            "progression": {
+                                "Mastermind": {
+                                    "type": "action",
+                                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                                    "effect text": "As long as an enemy doesn't take a hostile action against their allies, you can play their next turn"
+                                }
+                            }
+                        }
+                    }
+                }   
+            }
+        }
+    },
+    "Medicine": {
+        "Heal": {
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Intellect check of 4. On success, heal an ally for 2 HP and remove 1 status effect. Can't be used on 2 consecutive turns",
+            "progression": {
+                "Stabilize": {
+                    "type": "passive",
+                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                    "effect text": "Targets revived from the death state gain 3 HP and an additional action on their next turn",
+                    "progression": {
+                        "Patch-up": {
+                            "type": "passive",
+                            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                            "effect text": "During rests you can heal 1 ally to max HP",
+                            "progression": {
+                                "Booster": {
+                                    "type": "passive",
+                                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                                    "effect text": "Healing is doubled for targets below half HP"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "Wayfaring": {
+        "Never Lost": {
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Intellect check of 6 to get accurate directions and common knowledge of a location",
+            "progression": {
+                "Survivalist": {
+                    "type": "passive",
+                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                    "effect text": "Party heals 3 additional HP per rest and can not be ambused when they are not in an urban environment",
+                    "progression": {
+                        "Spirit of Adventure": {
+                            "type": "passive",
+                            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                            "effect text": "You always know the general location of the nearest rare item that isn't in your possession. +2 to Intellect checks while in pursuit",
+                            "progression": {
+                                "True North": {
+                                    "type": "passive",
+                                    "stat effect": [0, 0, 0, 0, 0, 0, 0],
+                                    "effect text": "You know all hidden enemy, trap, and item locations"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
