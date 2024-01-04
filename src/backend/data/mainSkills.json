@@ -1,0 +1,501 @@
+{
+    "Melee": [
+        {
+            "name": "Strong Swing",
+            "prereq": "",        
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Unaimed melee attacks deal 1 additional damage"
+        },
+        {
+            "name": "Wind Knocker",
+            "prereq": "Strong Swing",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "If your melee attack beats the targets Armor and Dodge scores, make a Brawn check of 10 to stun them"
+        },
+        {
+            "name": "Wild Strike",
+            "prereq": "Wind Knocker",
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Once per combat, make a melee attack. You can use your unused action(s) to boost the damage by 3 per unused action"
+        },
+        {
+            "name": "Surge of Strength",
+            "prereq": "Wild Strike",
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Once per combat, add 1d6 of damage to a melee attack"
+        },
+        {
+            "name": "Double Slash",
+            "prereq": "",        
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Attack a target twice, but don't add positive modifiers from weapons"
+        },
+        {
+            "name": "Repetitive Strike",
+            "prereq": "Double Slash",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "+1 to a die if you already attacked this turn"
+        }, 
+        {
+            "name": "In the Zone",
+            "prereq": "Repetitive Strike",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "If you land 3 attacks in a single turn, roll an extra die on Swift checks and add 10 meters of movement until your next turn ends"
+        },
+        {
+            "name": "Incessant Flurry",
+            "prereq": "In the Zone",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Bonus melee attack per turn"
+        }
+    ],
+    "Ranged": [
+        {
+            "name": "Long Shot",
+            "prereq": "",        
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Add +2 to ranged attacks over 25 meters away"
+        },
+        {   
+            "name": "Quick Adjustment",
+            "prereq": "Long Shot",                 
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "If you missed your first ranged attack this turn, add +2 to your next attack roll"
+        },
+        {   
+            "name": "Pinpoint Accuracy",
+            "prereq": "Quick Adjustment",                 
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Add your Intellect to a die on ranged aimed shots"
+        },
+        {   
+            "name": "Never Miss",
+            "prereq": "Pinpoint Accuracy",                 
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Once per combat, your next ranged aimed attack hits, even if it is out of your weapon's max range or if the target is behind cover"
+        },
+        {   
+            "name": "Trigger Happy",
+            "prereq": "",                 
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "In the first round of combat, make two ranged weapon attacks"
+        },
+        {
+            "name": "Run and Gun",
+            "prereq": "Trigger Happy",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "If you started this turn behind cover and will end this turn out of cover, make an additional ranged attack"
+        }, 
+        {
+            "name": "Point Blank",
+            "prereq": "Run and Gun",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Ranged attacks made within 10 meters deal +1 damage"
+        },
+        {
+            "name": "Termination",
+            "prereq": "Point Blank",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "If you killed or set an enemy to 1 HP, reload all weapons and make a bonus ranged attack"
+        }
+    ],
+    "Protection": [
+        {
+            "name": "Armor Up",
+            "prereq": "",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "+1 to Armor Score when wearing armor"
+        },
+        {
+            "name": "Unscathed",
+            "prereq": "Armor Up",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Ignore the first status effect in combat"
+        },
+        {
+            "name": "Impervious",
+            "prereq": "Unscathed",
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Once per rest make a brawn check of 6. On success, you can't take more than 1 damage per attack until the end of your next turn"
+        },
+        {
+            "name": "Near Invincible",
+            "prereq": "Near Invincible",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Double the amount of HP gained from Overshield"
+        },
+        {
+            "name": "Bulking Up",
+            "prereq": "",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Lose 5 meters of movement. Gain +2 HP whenever you permanently gain Brawn"                
+        },
+        {
+            "name": "Taunt",
+            "prereq": "Bulking Up",
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Force an enemy within movement range to move towards you and use ALL their actions to melee attack you on their next turn. At full health, this is a bonus action"         
+        },
+        {
+            "name": "Behind Me",
+            "prereq": "Taunt",
+            "type": "bonus action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Interrupt a ranged attack and move up to 15 meters to intercept it" 
+        },
+        {
+            "name": "Aid the Tank",
+            "prereq": "Behind Me",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "If you were hit since your last turn, gain +2 additional HP when healed and roll an additional attack die"
+        }
+    ],
+    "Evasion": [
+        {   "name": "Illusive",
+            "prereq": "",
+            "type": "bonus action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Once per combat, double your Dodge Score until the end of your next turn"
+        },
+        {
+            "name": "Barely Scathed",
+            "prereq": "Illusive",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "getting behind partial cover doesn't take an action"
+        },
+        {
+            "name": "Disarm",
+            "prereq": "Barely Scathed",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "If an enemy fails to beat your Dodge Score, make a Swift check of 10 to disarm the target"
+        },
+        {
+            "name": "Untouchable",
+            "prereq": "Disarm",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "You have two bonus uses of Skillful Dodge per rest"
+        },
+        {
+            "name": "Sprinter",
+            "prereq": "",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "+2 to Dodge Score on turns where you used an action to make a second movement"
+        },
+        {
+            "name": "Evasive",
+            "prereq": "Sprinter",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 2, -2],
+            "effect text": "+2 to Dodge Score, -2 to max HP"
+        },
+        {
+            "name": "Slide Kick",
+            "prereq": "Evasive",
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "If you used 2 movement actions this turn, make a melee attack as a bonus action. This attack rolls 2d6 + Dodge Score, deals 2 damage, and halves the target's movement on success"
+        },
+        {
+            "name": "Pure Speed",
+            "prereq": "Slide Kick",
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Once per combat, gain a bonus movement action per attack this turn"
+        }
+    ],
+    "Ambush": [
+        {
+            "name": "In the Shadows",
+            "prereq": "",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Roll an additional die on Swift checks related to sneaking"
+        },
+        {
+            "name": "Surgical Strike",
+            "prereq": "In the Shadows",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "No penalty for the first aimed ambush of combat"
+        },
+        {
+            "name": "Return to the Shadows",
+            "prereq": "Surgical Strike",
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "If you still have an action after an ambush attack, perform a Swift check of 6 behind partial cover to re-enter stealth"
+        },
+        {
+            "name": "Boogeyman",
+            "prereq": "Return to the Shadows",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Unaimed ambushes deal x2 damage"
+        }     
+    ],
+    "Grappling": [
+        {
+            "name": "Off the Top Ropes",
+            "prereq": "",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Any fall damage taken during grapples is applied to your opponent instead. +1 to grappling checks"
+        },
+        {
+            "name": "No Escape",
+            "prereq": "Off the Top Ropes",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Gain a bonus movement action the turn after a target escapes your grapple"
+        },
+        {
+            "name": "Spinning Throw",
+            "prereq": "No Escape",
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Throw a target up to 20 meters. If they hit a solid object, they take damage equal to your Brawn score. Anyone else they collide with also takes damage equal to your Brawn score"
+        },
+        {
+            "name": "World Champion",
+            "prereq": "Spinning Throw",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Your movement is not restricted when grappling and you can grapple two enemies at once"
+        }
+    ],
+    "Performance": [
+        {
+            "name": "Crowd Favorite",
+            "prereq": "",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "After succeeding a Charisma check in a crowd, +1 to your Charisma until you fail a Charisma check"
+        },
+        {
+            "name": "Feeling Yourself",
+            "prereq": "Crowd Favorite",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Gain +2 to your next attack roll after a successful Charisma check"
+        },
+        {
+            "name": "Dreamboat",
+            "prereq": "Feeling Yourself",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Characters who could be attracted to you must pass a Charisma check of 8 to be able to attack the first round of combat"
+        },
+        {
+            "name": "Beloved",
+            "prereq": "Dreamboat",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "If you have ever passed a Charisma check against an NPC, they will come to your aid if you are attacked as long as you have not attacked them"
+        },
+        {
+            "name": "Conversationalist",
+            "prereq": "",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "When talking to someone in a faction you have stored Faction Points with, +2 to Charisma checks"
+        },
+        {
+            "name": "Smooth Recovery",
+            "prereq": "Conversationalist",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "After failing a Charisma check, you get a bonus die for your next one"
+        },
+        {
+            "name": "Curry Favor",
+            "prereq": "Smooth Recovery",
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Spend a faction point to pass all Charisma checks with that faction for the rest of the day"
+        },
+        {
+            "name": "Favorite Son",
+            "prereq": "Curry Favor",
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Unlock everything from a faction once"
+        }
+    ],
+    "Intimidation": [
+        {
+            "name": "Confidence Killer",
+            "prereq": "",
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Charisma check of 6 to give an enemy -2 to a stat of your choice until the end of your next turn. (Can't effect HP)"
+        },
+        {
+            "name": "Imposing",
+            "prereq": "Confidence Killer",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "You can't be attacked until you make a hostile action"
+        },
+        {
+            "name": "Hand it Over",
+            "prereq": "Imposing",
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Charisma check of 6 to rob the target of any non-precious item with no risk of immediate conflict."
+        },
+        {
+            "name": "It's so Over",
+            "prereq": "Hand it Over",
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Once per rest, make a Charisma check of 12 to end combat"
+        }   
+    ],
+    "Support": [
+        {
+            "name": "Encourage",
+            "prereq": "",
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Once per rest, Charisma check of 10. On success, give an ally 2 bonus dice on their next stat check or attack. On fail, they get 1 bonus die"
+        },
+        {
+            "name": "Ubreakable",
+            "prereq": "Encourage",
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Once per rest, Charisma check of 6. On success, they can't go below 1 HP until the end of your next turn."
+        },
+        {
+            "name": "Coaching",
+            "prereq": "Unbreakable",
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Once per rest, give yoru allies a bonus action on their next turn"
+        },
+        {
+            "name": "Without Fail",
+            "prereq": "Coaching",
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Once per rest, until the end of your next turn, allies automatically pass their checks and their attacks always hit."
+        } 
+    ],
+    "Observation": [
+        {
+            "name": "Foreknew",
+            "prereq": "",
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Know one enemy's next turn. If your Intellect is 4 or higher, you may use this once per turn as a bonus action"
+        },
+        {
+            "name": "Tactical Sight",
+            "prereq": "Foreknew",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "You know the HP of all enemies that are within eyesight and have taken damage in this combat. Also, you can't be ambushed."
+        },
+        {
+            "name": "Mind Reader",
+            "prereq": "Tactical Sight",
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Intellect check of 8. On success, read the target's mind"
+        },
+        {
+            "name": "Mastermind",
+            "prereq": "Mind Reader",
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "As long as an enemy doesn't take a hostile action against their allies, you can play their next turn"
+        }     
+    ],
+    "Medicine": [
+        {
+            "name": "Heal",
+            "prereq": "",
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Intellect check of 4. On success, heal an ally for 2 HP and remove 1 status effect. Can't be used on 2 consecutive turns"
+        },
+        {
+            "name": "Stabilize",
+            "prereq": "Heal",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Targets revived from the death state gain 3 HP and an additional action on their next turn"
+        },
+        {
+            "name": "Patch-up",
+            "prereq": "Stabilize",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "During rests you can heal 1 ally to max HP"
+        },                    
+        {
+            "name": "Booster",
+            "prereq": "Patch-up",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Healing is doubled for targets below half HP"
+        }
+    ],
+    "Wayfaring": [
+        {
+            "name": "Never Lost",
+            "prereq": "",
+            "type": "action",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Intellect check of 6 to get accurate directions and common knowledge of a location"
+        },
+        {
+            "name": "Survivalist",
+            "prereq": "Never Lost",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "Party heals 3 additional HP per rest and can not be ambused when they are not in an urban environment"
+        },
+        {
+            "name": "Spirit of Adventure",
+            "prereq": "Survivalist",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "You always know the general location of the nearest rare item that isn't in your possession. +2 to Intellect checks while in pursuit"
+        },
+        {
+            "name": "True North",
+            "prereq": "Spirit of Adventure",
+            "type": "passive",
+            "stat effect": [0, 0, 0, 0, 0, 0, 0],
+            "effect text": "You know all hidden enemy, trap, and item locations"
+        }
+    ]
+}
