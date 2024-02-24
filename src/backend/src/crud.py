@@ -27,8 +27,8 @@ def get_user_by_id(db: Session, user_id: int):
 def get_user_by_name(db: Session, name: str):
     return db.query(models.User).filter(models.User.name == name).first()
 
-def get_char(db: Session, user_name: str, char_name: str):
-    return db.query(models.Character).filter(models.User.name == user_name).filter(models.Character.name == char_name).first()
+def get_char(db: Session, user_id: int, char_name: str):
+    return db.query(models.Character).filter(models.User.id == user_id).filter(models.Character.name == char_name).first()
 
 '''
     Update methods
@@ -37,3 +37,14 @@ def get_char(db: Session, user_name: str, char_name: str):
 '''
     Delete methods
 '''
+def delete_user(db: Session, user: models.User):
+    db.delete(user)
+    db.commit()
+    return user
+
+def delete_char(db: Session, char: models.User):
+    db.delete(char)
+    db.commit()
+    return char
+
+    

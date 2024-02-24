@@ -13,6 +13,9 @@ class CharacterBase(BaseModel):
 class CharacterCreate(CharacterBase):
     pass
 
+class CharacterDelete(CharacterBase):
+    pass
+
 class Character(CharacterBase):
     id: int
     user_id: int
@@ -24,6 +27,9 @@ class UserBase(BaseModel):
     name: str
 
 class UserCreate(UserBase):
+    pass
+
+class UserDelete(UserBase):
     pass
 
 class User(UserBase):
