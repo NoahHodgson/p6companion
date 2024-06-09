@@ -16,6 +16,9 @@ class CharacterCreate(CharacterBase):
 class CharacterDelete(CharacterBase):
     pass
 
+class CharacterUpdate(CharacterBase):
+    pass
+
 class Character(CharacterBase):
     id: int
     user_id: int
