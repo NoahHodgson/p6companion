@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import "./App.css";
+import "./static/App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, Form, Button } from "react-bootstrap";
 import LandingPage from "./pages/LandingPage";
 import ErrorPage from "./pages/ErrorPage";
 import CharacterPage from "./pages/CharacterPage";
 import logo from "./assets/logo.png";
+import LoginModal from "./pages/LoginPage";
 
 const router = createBrowserRouter([
   {
@@ -14,16 +15,17 @@ const router = createBrowserRouter([
     element: <LandingPage />,
     errorElement: <ErrorPage />,
   },
-  {
-    path: "/character",
-    element: <CharacterPage />,
-  },
 ]);
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
+
   return (
     <div className="App">
-      <Navbar data-bs-theme="dark" style={ { backgroundColor: "#cf1322"}}>
+      <LoginModal show={showLogin} showCallback={setShowLogin}/>
+      
+      <Navbar data-bs-theme="dark" style={ { backgroundColor: "#A90000"}}>
         <Navbar.Brand href="/">
           <img
             src={logo}
@@ -35,10 +37,10 @@ function App() {
         </Navbar.Brand>
         <Nav>
           <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/character">Character-Creation</Nav.Link>
           <Nav.Link href="https://noahhodgson.github.io/power6system/">
             About
           </Nav.Link>
+          <Nav.Link onClick={() => setShowLogin(true)}> Login </Nav.Link>
         </Nav>
       </Navbar>
       <RouterProvider router={router} />
