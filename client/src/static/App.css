@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+.login-form {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.login-modal-header {
+  background-color: #282c34;
+}
+
+.btn-close {
+  color: #fff; 
+  opacity: 1;
+}
+
+.login-modal-title {
+  color: whitesmoke;
+}
+
+.login-modal-body {
+  background-color: #282c34;
+}
+
+.login-modal-footer {
+  background-color: #282c34;
+}

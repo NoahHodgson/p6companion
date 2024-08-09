@@ -18,8 +18,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-    "strictPropertyInitialization": false,
+    "jsx": "preserve",
+    "strictPropertyInitialization": false
   },
   "include": [
     "src"
