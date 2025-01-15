@@ -8,11 +8,17 @@ import LandingPage from "./pages/LandingPage";
 import ErrorPage from "./pages/ErrorPage";
 import CharacterPage from "./pages/CharacterPage";
 import logo from "./assets/logo.png";
+import AboutPage from "./pages/AboutPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <LandingPage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/about",
+    element: <AboutPage />,
     errorElement: <ErrorPage />,
   },
 ]);
@@ -87,9 +93,7 @@ function App() {
         </Navbar.Brand>
         <Nav>
           <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="https://noahhodgson.github.io/power6system/">
-            About
-          </Nav.Link>
+          <Nav.Link href="/about">About</Nav.Link>
           { !loggedIn ? <Nav.Link onClick={() => setShowLogin(true)}> Login</Nav.Link> : null }
         </Nav>
       </Navbar>
